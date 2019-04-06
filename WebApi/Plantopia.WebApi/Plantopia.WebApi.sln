@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Plantopia.WebApi", "Plantopia.WebApi\Plantopia.WebApi.csproj", "{8BAA874A-2F1E-4D4B-8D3D-FCB5162E32D7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Plantopia.Auth", "Plantopia.Auth\Plantopia.Auth.csproj", "{CA036164-81D4-4E82-B58E-3FB4767747A7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Plantopia.Common", "Plantopia.Common\Plantopia.Common.csproj", "{D79580E7-CFBF-4DDE-80AD-59052D34E818}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plantopia.Api.Data", "Plantopia.Api.Data\Plantopia.Api.Data.csproj", "{464A33B7-30BF-444C-826D-5F6C8DC90D5B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8BAA874A-2F1E-4D4B-8D3D-FCB5162E32D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BAA874A-2F1E-4D4B-8D3D-FCB5162E32D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BAA874A-2F1E-4D4B-8D3D-FCB5162E32D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BAA874A-2F1E-4D4B-8D3D-FCB5162E32D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA036164-81D4-4E82-B58E-3FB4767747A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA036164-81D4-4E82-B58E-3FB4767747A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA036164-81D4-4E82-B58E-3FB4767747A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA036164-81D4-4E82-B58E-3FB4767747A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D79580E7-CFBF-4DDE-80AD-59052D34E818}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D79580E7-CFBF-4DDE-80AD-59052D34E818}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D79580E7-CFBF-4DDE-80AD-59052D34E818}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D79580E7-CFBF-4DDE-80AD-59052D34E818}.Release|Any CPU.Build.0 = Release|Any CPU
+		{464A33B7-30BF-444C-826D-5F6C8DC90D5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{464A33B7-30BF-444C-826D-5F6C8DC90D5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{464A33B7-30BF-444C-826D-5F6C8DC90D5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{464A33B7-30BF-444C-826D-5F6C8DC90D5B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ED55D975-38CB-45F2-B6C3-0C45BF10D6F9}
+	EndGlobalSection
+EndGlobal
