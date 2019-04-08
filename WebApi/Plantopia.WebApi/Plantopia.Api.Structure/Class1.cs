@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Plantopia.Api.Data
+namespace Plantopia.Api.Structure
 {
     public class Class1
     {

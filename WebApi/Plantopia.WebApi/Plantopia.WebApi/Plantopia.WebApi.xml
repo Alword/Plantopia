@@ -1,0 +1,375 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Plantopia.WebApi</name>
+    </assembly>
+    <members>
+        <member name="T:Plantopia.WebApi.Controllers.v1.AuthController">
+            <inheritdoc />
+            <summary>
+            The controller is responsible for user registration and authorization
+            </summary>
+        </member>
+        <member name="M:Plantopia.WebApi.Controllers.v1.AuthController.#ctor(Plantopia.WebApi.Data.Model.PlantopiaDataContext,Microsoft.Extensions.Logging.ILogger{Plantopia.WebApi.Controllers.v1.AuthController})">
+            <summary>
+            Base ctor, injected context and logger
+            </summary>
+            <param name="context"></param>
+            <param name="logger"></param>
+        </member>
+        <member name="M:Plantopia.WebApi.Controllers.v1.AuthController.Token(Plantopia.Auth.Models.BasicAuthClaims)">
+            <summary>
+                From Request Basic Authorization
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Plantopia.WebApi.Controllers.v1.AuthController.Registration(Plantopia.Auth.Models.BasicAuthClaims)">
+            <summary>
+            Create the account
+            </summary>
+            <param name="user"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Plantopia.WebApi.Controllers.v1.UsersController">
+            <inheritdoc />
+        </member>
+        <member name="M:Plantopia.WebApi.Controllers.v1.UsersController.#ctor(Plantopia.WebApi.Data.Model.PlantopiaDataContext)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:Plantopia.WebApi.Controllers.v1.UsersController.GetUsers(System.String)">
+            <summary>
+            GET: api/Users/nickname
+            </summary>
+            <param name="nick"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Plantopia.WebApi.Controllers.v1.UsersController.GetUserId(System.Int32)">
+            <summary>
+            GET: api/Users/5
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Plantopia.WebApi.Controllers.v1.UsersController.GetUser">
+            <summary>
+            api/Users/
+            </summary>
+            <returns>authorized user data</returns>
+        </member>
+        <member name="M:Plantopia.WebApi.Controllers.v1.UsersController.PutUser(Plantopia.WebApi.Data.Model.Person.User)">
+            <summary>
+            PUT: api/Users
+            </summary>
+            <param name="user"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Plantopia.WebApi.Controllers.v1.UsersController.AdminDeleteUser(System.Int32)">
+            <summary>
+            DELETE: api/Users/5
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Plantopia.WebApi.Controllers.v1.ValuesController">
+            <inheritdoc />
+        </member>
+        <member name="M:Plantopia.WebApi.Controllers.v1.ValuesController.#ctor(Plantopia.WebApi.Data.Model.PlantopiaDataContext)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:Plantopia.WebApi.Controllers.v1.ValuesController.GetVersion">
+            <summary>
+                This is to get requested Api version
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Plantopia.WebApi.Controllers.v1.ValuesController.Get">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Plantopia.WebApi.Controllers.v1.ValuesController.GetLogin">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Plantopia.WebApi.Controllers.v1.ValuesController.GetRole">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Plantopia.WebApi.Data.Model.PlantopiaDataContext">
+            <inheritdoc />
+            <summary>
+            Base application context about all data
+            </summary>
+        </member>
+        <member name="M:Plantopia.WebApi.Data.Model.PlantopiaDataContext.#ctor(System.String)">
+            <inheritdoc />
+            <summary>
+            Base ctor
+            </summary>
+            <param name="connectionString"></param>
+        </member>
+        <member name="P:Plantopia.WebApi.Data.Model.PlantopiaDataContext.Users">
+            <summary>
+            Users set
+            </summary>
+        </member>
+        <member name="P:Plantopia.WebApi.Data.Model.PlantopiaDataContext.Accounts">
+            <summary>
+            Accounts set
+            </summary>
+        </member>
+        <member name="M:Plantopia.WebApi.Data.Model.PlantopiaDataContext.OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder)">
+            <inheritdoc />
+            <summary>
+            Configuration builder
+            </summary>
+            <param name="optionBuilder"></param>
+        </member>
+        <member name="T:Plantopia.WebApi.Data.Model.SaltManager">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Plantopia.WebApi.Data.Model.SaltManager.SaltPassword(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="password"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Plantopia.WebApi.Data.Model.SaltManager.EqualsSequence(System.String,System.Byte[])">
+            <summary>
+            
+            </summary>
+            <param name="password"></param>
+            <param name="saltedKey"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Plantopia.WebApi.Data.Repositories.AccountRepository">
+            <inheritdoc />
+        </member>
+        <member name="M:Plantopia.WebApi.Data.Repositories.AccountRepository.#ctor(Plantopia.WebApi.Data.Model.PlantopiaDataContext)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="T:Plantopia.WebApi.Data.Repositories.UserRepository">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Plantopia.WebApi.Data.Repositories.UserRepository.#ctor(Plantopia.WebApi.Data.Model.PlantopiaDataContext)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:Plantopia.WebApi.Data.Repositories.UserRepository.Count">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Plantopia.WebApi.Providers.AccountIdentityProvider">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Plantopia.WebApi.Providers.AccountIdentityProvider.AccountRepository">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Plantopia.WebApi.Providers.AccountIdentityProvider.#ctor(Plantopia.WebApi.Data.Repositories.AccountRepository,Microsoft.Extensions.Logging.ILogger)">
+            <summary>
+                Create provider via repository
+            </summary>
+            <param name="repository"></param>
+            <param name="logger"></param>
+        </member>
+        <member name="M:Plantopia.WebApi.Providers.AccountIdentityProvider.GetIdentity(Plantopia.Auth.Models.BasicAuthClaims)">
+            <summary>
+                This is to check user identity [FromBody]
+            </summary>
+            <param name="user"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Plantopia.WebApi.Providers.AccountIdentityProvider.GetIdentity(System.String,System.String)">
+            <summary>
+                This is to check user identity
+            </summary>
+            <param name="email"></param>
+            <param name="password"></param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentException"></exception>
+        </member>
+        <member name="T:Plantopia.WebApi.Providers.FileLogger">
+            <inheritdoc />
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Plantopia.WebApi.Providers.FileLogger.#ctor(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="path"></param>
+        </member>
+        <member name="M:Plantopia.WebApi.Providers.FileLogger.BeginScope``1(``0)">
+            <summary>
+            
+            </summary>
+            <param name="state"></param>
+            <typeparam name="TState"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:Plantopia.WebApi.Providers.FileLogger.IsEnabled(Microsoft.Extensions.Logging.LogLevel)">
+            <summary>
+            
+            </summary>
+            <param name="logLevel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Plantopia.WebApi.Providers.FileLogger.Log``1(Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,``0,System.Exception,System.Func{``0,System.Exception,System.String})">
+            <inheritdoc />
+            <summary>
+            </summary>
+            <param name="logLevel"></param>
+            <param name="eventId"></param>
+            <param name="state"></param>
+            <param name="exception"></param>
+            <param name="formatter"></param>
+            <typeparam name="TState"></typeparam>
+        </member>
+        <member name="T:Plantopia.WebApi.Providers.FileLoggerExtensions">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Plantopia.WebApi.Providers.FileLoggerProvider">
+            <inheritdoc />
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Plantopia.WebApi.Providers.FileLoggerProvider.#ctor(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="path"></param>
+        </member>
+        <member name="M:Plantopia.WebApi.Providers.FileLoggerProvider.CreateLogger(System.String)">
+            <inheritdoc />
+            <summary>
+            </summary>
+            <param name="categoryName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Plantopia.WebApi.Providers.FileLoggerProvider.Dispose">
+            <inheritdoc />
+            <summary>
+            </summary>
+        </member>
+        <member name="T:Plantopia.WebApi.Service.ServiceBase">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Plantopia.WebApi.Service.ServiceBase.Context">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Plantopia.WebApi.Service.ServiceBase.#ctor(Plantopia.WebApi.Data.Model.PlantopiaDataContext)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="T:Plantopia.WebApi.Service.UserService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Plantopia.WebApi.Service.UserService.#ctor(Plantopia.WebApi.Data.Model.PlantopiaDataContext)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="T:Plantopia.WebApi.Startup">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Plantopia.WebApi.Startup.Configuration">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Plantopia.WebApi.Startup.#ctor(Microsoft.AspNetCore.Hosting.IHostingEnvironment)">
+            <summary>
+            
+            </summary>
+            <param name="env"></param>
+        </member>
+        <member name="M:Plantopia.WebApi.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:Plantopia.WebApi.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IHostingEnvironment,Microsoft.Extensions.Logging.ILoggerFactory)">
+            <summary>
+            
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
+            <param name="loggerFactory"></param>
+        </member>
+        <member name="M:Plantopia.WebApi.Startup.LoggerConfiguration(Microsoft.Extensions.Logging.ILoggerFactory)">
+            <summary>
+            Configure the logger data format and file location
+            </summary>
+            <param name="loggerFactory"></param>
+        </member>
+        <member name="T:Plantopia.WebApi.Swagger.RemoveVersionParameters">
+            <summary>
+            This is need to Remove Version Parameters from url path in Swagger UI.
+            For example v{version}/get replace to v1.1/get
+            </summary>
+        </member>
+        <member name="M:Plantopia.WebApi.Swagger.RemoveVersionParameters.Apply(Swashbuckle.AspNetCore.Swagger.Operation,Swashbuckle.AspNetCore.SwaggerGen.OperationFilterContext)">
+            <summary>
+            Operation filter interfere method 
+            </summary>
+            <param name="operation"></param>
+            <param name="context"></param>
+        </member>
+        <member name="M:InWords.Data.Repository`1.Remove(`0[])">
+            <summary>
+                Async remove from DataBase
+            </summary>
+            <param name="item"></param>
+        </member>
+        <member name="M:InWords.Data.Repository`1.Stack(`0,System.Func{`0,System.Boolean})">
+            <summary>
+                Creates an entity or returns if it exists
+            </summary>
+            <param name="item"></param>
+            <param name="predicate"></param>
+            <returns></returns>
+        </member>
+        <!-- Проигнорирован некорректный комментарий XML для члена "M:InWords.Data.Repository`1.GetWithInclude(System.Linq.Expressions.Expression{System.Func{`0,System.Object}}[])" -->
+    </members>
+</doc>
