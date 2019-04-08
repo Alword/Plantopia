@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile></DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <DocumentationFile>C:\Users\aasle\source\repos\Plantopia\WebApi\Plantopia.WebApi\Plantopia.WebApi\Plantopia.WebApi.xml</DocumentationFile>
   </PropertyGroup>
 

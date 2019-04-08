@@ -1,18 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Reflection;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
 using Plantopia.Auth;
 using Plantopia.WebApi.Data.Model;
 using Plantopia.WebApi.Providers;
@@ -78,7 +76,14 @@ namespace Plantopia.WebApi
                 c.SwaggerDoc("v1.1", new Info { Version = "v1.1", Title = "API V1.1" });
 
                 string filePath = Path.Combine(AppContext.BaseDirectory, "Plantopia.WebApi.xml");
-                c.IncludeXmlComments(filePath);
+                if (File.Exists(filePath))
+                {
+                    c.IncludeXmlComments(filePath);
+                }
+                else
+                {
+                    Debug.Write("Swagger comments not found");
+                }
                 c.DocInclusionPredicate((docName, apiDesc) =>
                 {
                     if (!apiDesc.TryGetMethodInfo(out MethodInfo methodInfo)) return false;
