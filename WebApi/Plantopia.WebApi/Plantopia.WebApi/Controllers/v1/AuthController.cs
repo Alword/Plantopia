@@ -6,8 +6,8 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Plantopia.Auth.Models;
-using Plantopia.WebApi.Data.Model;
-using Plantopia.WebApi.Data.Repositories;
+using Plantopia.WebApi.Domains.Model;
+using Plantopia.WebApi.Domains.Repositories;
 using Plantopia.WebApi.Providers;
 
 namespace Plantopia.WebApi.Controllers.v1

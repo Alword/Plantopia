@@ -1,9 +1,8 @@
 ﻿using System.Linq;
-using InWords.Data;
-using Plantopia.WebApi.Data.Model;
-using Plantopia.WebApi.Data.Model.Person;
+using Plantopia.WebApi.Domains.Model;
+using Plantopia.WebApi.Domains.Model.Person;
 
-namespace Plantopia.WebApi.Data.Repositories
+namespace Plantopia.WebApi.Domains.Repositories
 {
     /// <summary>
     /// 

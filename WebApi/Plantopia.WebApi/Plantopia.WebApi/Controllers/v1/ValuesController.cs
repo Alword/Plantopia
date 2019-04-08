@@ -1,8 +1,8 @@
 ﻿using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Plantopia.WebApi.Data.Model;
-using Plantopia.WebApi.Data.Repositories;
+using Plantopia.WebApi.Domains.Model;
+using Plantopia.WebApi.Domains.Repositories;
 
 namespace Plantopia.WebApi.Controllers.v1
 {

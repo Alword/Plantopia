@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using InWords.Data;
-using Plantopia.WebApi.Data.Model;
-using Plantopia.WebApi.Data.Model.Person;
+﻿using Plantopia.WebApi.Domains.Model;
+using Plantopia.WebApi.Domains.Model.Person;
 
-namespace Plantopia.WebApi.Data.Repositories
+namespace Plantopia.WebApi.Domains.Repositories
 {
     /// <inheritdoc />
     public class AccountRepository : Repository<Account>

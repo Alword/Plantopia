@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Linq;
 using System.Security.Cryptography;
-using System.Threading.Tasks;
 using Plantopia.WebApi.Data.Interfaces;
 
-namespace Plantopia.WebApi.Data.Model
+namespace Plantopia.WebApi.Model
 {
     /// <summary>
-    /// 
     /// </summary>
     // ReSharper disable once HollowTypeName
     public class SaltManager : IPasswordSalter
@@ -18,7 +14,6 @@ namespace Plantopia.WebApi.Data.Model
         private const int KEY_BUFFER = MYSQL_BUFFER - SALT_BUFFER;
 
         /// <summary>
-        /// 
         /// </summary>
         /// <param name="password"></param>
         /// <returns></returns>
@@ -40,7 +35,6 @@ namespace Plantopia.WebApi.Data.Model
         }
 
         /// <summary>
-        /// 
         /// </summary>
         /// <param name="password"></param>
         /// <param name="saltedKey"></param>

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Plantopia.WebApi.Data.Interfaces;
 
-namespace InWords.Data
+namespace Plantopia.WebApi.Domains.Repositories
 {
     public class Repository<TEntity> : IGenericRepository<TEntity> where TEntity : class
     {

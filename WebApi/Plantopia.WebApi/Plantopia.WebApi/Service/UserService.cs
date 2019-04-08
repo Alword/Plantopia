@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using Plantopia.WebApi.Data.Model;
-using Plantopia.WebApi.Data.Model.Person;
-using Plantopia.WebApi.Data.Repositories;
+using Plantopia.WebApi.Domains.Model;
+using Plantopia.WebApi.Domains.Model.Person;
+using Plantopia.WebApi.Domains.Repositories;
 
 namespace Plantopia.WebApi.Service
 {

@@ -1,4 +1,4 @@
-﻿using Plantopia.WebApi.Data.Model;
+﻿using Plantopia.WebApi.Domains.Model;
 
 namespace Plantopia.WebApi.Service
 {
