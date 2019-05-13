@@ -1,8 +1,7 @@
 import axios from 'axios';
-import dataTransferActions from '../actions/dataTransferActions';
-import errorMessageActions from '../actions/errorMessageActions';
+import commonActions from '../actions/commonActions';
 import accessActions from '../actions/accessActions';
-import history from '../history/history';
+import history from '../history';
 
 const API_ROOT = 'https://api.plantopia.ru/v1.0/';
 
@@ -26,7 +25,7 @@ const apiMiddleware = ({ dispatch, getState }) => next => action => {
 
     const dataOrParams = ['GET', 'DELETE'].includes(method) ? 'params' : 'data';
 
-    dispatch(dataTransferActions.beginDataTransfer());
+    dispatch(commonActions.beginLoading());
 
     axios.request({
         url: API_ROOT + endpoint,
@@ -38,23 +37,23 @@ const apiMiddleware = ({ dispatch, getState }) => next => action => {
         [dataOrParams]: data
     })
         .then(({ data }) => {
-            dispatch(dataTransferActions.endDataTransfer());
-            actionsOnSuccess.forEach((action) => dispatch(action(data)));
+            dispatch(commonActions.endLoading());
+            actionsOnSuccess.forEach(action => dispatch(action(data)));
 
             if (redirection) {
                 history.push(redirection);
             }
         })
         .catch(error => {
-            dispatch(dataTransferActions.endDataTransfer());
-            dispatch(errorMessageActions.setErrorMessage(errorMessage));
+            dispatch(commonActions.endLoading());
+            dispatch(commonActions.setErrorMessage(errorMessage));
 
             if (error.response && error.response.status === 401) {
                 dispatch(accessActions.denyAccess());
                 history.push('/login');
             }
 
-            console.error(error);
+            console.error(error.response);
         })
 };
 

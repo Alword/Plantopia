@@ -9,7 +9,7 @@ function login(userdata) {
         data: JSON.stringify(userdata),
         actionsOnSuccess: [accessActions.grantAccess],
         redirection: '/my_plants',
-        errorMessage: 'Ошибка авторизации'
+        errorMessage: 'Не удалось авторизоваться'
     });
 }
 
@@ -19,7 +19,7 @@ function register(userdata) {
         method: 'POST',
         data: JSON.stringify(userdata),
         redirection: '/login',
-        errorMessage: 'Ошибка регистрации'
+        errorMessage: 'Не удалось зарегистрироваться'
     });
 }
 
@@ -27,9 +27,9 @@ function receiveUserInfo(userId) {
     return apiAction({
         endpoint: `Users/${userId}`,
         actionsOnSuccess: [userActions.initializeUserInfo],
-        errorMessage: 'Ошибка загрузки профиля'
+        errorMessage: 'Не удалось загрузить профиль'
     });
-};
+}
 
 function changeUserInfo(userInfo) {
     return apiAction({
@@ -37,15 +37,14 @@ function changeUserInfo(userInfo) {
         method: 'PUT',
         data: JSON.stringify(userInfo),
         actionsOnSuccess: [() => userActions.updateUserInfo(userInfo)],
-        errorMessage: 'Ошибка редактирования профиля'
+        redirection: '/profile',
+        errorMessage: 'Не удалось сохранить профиль'
     });
-};
+}
 
-const userApiActions = {
+export default {
     login,
     register,
     receiveUserInfo,
     changeUserInfo
 };
-
-export default userApiActions;
