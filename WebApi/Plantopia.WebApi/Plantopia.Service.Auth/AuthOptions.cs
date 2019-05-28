@@ -1,7 +1,7 @@
-﻿using Plantopia.Auth.Interfaces;
-using Plantopia.Auth.Models;
+﻿using Plantopia.Service.Auth.Interfaces;
+using Plantopia.Service.Auth.Models;
 
-namespace Plantopia.Auth
+namespace Plantopia.Service.Auth
 {
     public static class AuthOptions
     {
