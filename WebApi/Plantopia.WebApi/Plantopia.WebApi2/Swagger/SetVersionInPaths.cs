@@ -2,7 +2,7 @@
 using Swashbuckle.AspNetCore.Swagger;
 using Swashbuckle.AspNetCore.SwaggerGen;
 
-namespace Plantopia.WebApi.Swagger
+namespace Plantopia.WebApi2.Swagger
 {
     public class SetVersionInPaths : IDocumentFilter
     {

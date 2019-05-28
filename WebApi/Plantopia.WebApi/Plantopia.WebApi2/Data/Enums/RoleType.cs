@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace Plantopia.WebApi.Enums
+﻿namespace Plantopia.WebApi2.Data.Enums
 {
     public enum RoleType
     {

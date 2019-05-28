@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
-using Plantopia.WebApi.Data.Model.Person;
+﻿using Microsoft.EntityFrameworkCore;
+using Plantopia.WebApi2.Data.Model.Person;
 
-namespace Plantopia.WebApi.Data.Model
+namespace Plantopia.WebApi2.Data.Model
 {
     /// <inheritdoc />
     /// <summary>
@@ -37,6 +33,12 @@ namespace Plantopia.WebApi.Data.Model
         /// Accounts set
         /// </summary>
         public DbSet<Account> Accounts { get; set; }
+
+        /// <summary>
+        /// Accounts set
+        /// </summary>
+        public DbSet<Account> Accounts { get; set; }
+
 
         /// <inheritdoc />
         /// <summary>

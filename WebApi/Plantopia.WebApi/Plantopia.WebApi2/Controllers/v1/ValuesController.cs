@@ -1,10 +1,9 @@
-﻿using System.Threading.Tasks;
-using Microsoft.AspNetCore.Authorization;
+﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Plantopia.WebApi.Data.Model;
-using Plantopia.WebApi.Data.Repositories;
+using Plantopia.WebApi2.Data.Model;
+using Plantopia.WebApi2.Data.Repositories;
 
-namespace Plantopia.WebApi.Controllers.v1
+namespace Plantopia.WebApi2.Controllers.v1
 {
     /// <inheritdoc />
     [ApiController]

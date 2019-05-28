@@ -5,13 +5,13 @@ using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Logging;
 using Plantopia.Service.Auth.Models;
-using Plantopia.WebApi.Data.Interfaces;
-using Plantopia.WebApi.Data.Model;
-using Plantopia.WebApi.Data.Model.Person;
-using Plantopia.WebApi.Data.Repositories;
-using Plantopia.WebApi.Enums;
+using Plantopia.WebApi2.Data.Enums;
+using Plantopia.WebApi2.Data.Interfaces;
+using Plantopia.WebApi2.Data.Model;
+using Plantopia.WebApi2.Data.Model.Person;
+using Plantopia.WebApi2.Data.Repositories;
 
-namespace Plantopia.WebApi.Providers
+namespace Plantopia.WebApi2.Providers
 {
     /// <summary>
     /// 

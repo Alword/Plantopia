@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace Plantopia.WebApi.Data.Interfaces
+﻿namespace Plantopia.WebApi2.Data.Interfaces
 {
     public interface IPasswordSalter
     {

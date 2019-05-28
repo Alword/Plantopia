@@ -12,13 +12,13 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Plantopia.Service.Auth;
-using Plantopia.WebApi.Data.Model;
-using Plantopia.WebApi.Providers;
-using Plantopia.WebApi.Swagger;
+using Plantopia.WebApi2.Data.Model;
+using Plantopia.WebApi2.Providers;
+using Plantopia.WebApi2.Swagger;
 using Swashbuckle.AspNetCore.Swagger;
 using Swashbuckle.AspNetCore.SwaggerGen;
 
-namespace Plantopia.WebApi
+namespace Plantopia.WebApi2
 {
     /// <summary>
     /// 

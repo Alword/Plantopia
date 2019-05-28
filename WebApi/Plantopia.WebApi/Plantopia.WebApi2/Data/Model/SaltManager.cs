@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Linq;
 using System.Security.Cryptography;
-using System.Threading.Tasks;
-using Plantopia.WebApi.Data.Interfaces;
+using Plantopia.WebApi2.Data.Interfaces;
 
-namespace Plantopia.WebApi.Data.Model
+namespace Plantopia.WebApi2.Data.Model
 {
     /// <summary>
     /// 

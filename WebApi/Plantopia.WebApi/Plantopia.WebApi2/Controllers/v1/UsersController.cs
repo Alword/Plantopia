@@ -3,13 +3,13 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Plantopia.Service.Auth.Extensions;
-using Plantopia.WebApi.Data.Model;
-using Plantopia.WebApi.Data.Model.Person;
-using Plantopia.WebApi.Data.Repositories;
-using Plantopia.WebApi.Enums;
-using Plantopia.WebApi.Service;
+using Plantopia.WebApi2.Data.Enums;
+using Plantopia.WebApi2.Data.Model;
+using Plantopia.WebApi2.Data.Model.Person;
+using Plantopia.WebApi2.Data.Repositories;
+using Plantopia.WebApi2.Service;
 
-namespace Plantopia.WebApi.Controllers.v1
+namespace Plantopia.WebApi2.Controllers.v1
 {
     /// <inheritdoc />
     [Authorize]

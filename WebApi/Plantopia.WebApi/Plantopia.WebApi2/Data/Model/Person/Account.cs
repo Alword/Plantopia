@@ -1,11 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Threading.Tasks;
-using Plantopia.WebApi.Enums;
+using Plantopia.WebApi2.Data.Enums;
 
-namespace Plantopia.WebApi.Data.Model.Person
+namespace Plantopia.WebApi2.Data.Model.Person
 {
     public class Account
     {

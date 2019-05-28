@@ -2,7 +2,7 @@
 using System.IO;
 using Microsoft.Extensions.Logging;
 
-namespace Plantopia.WebApi.Providers
+namespace Plantopia.WebApi2.Providers
 {
     /// <inheritdoc />
     /// <summary>

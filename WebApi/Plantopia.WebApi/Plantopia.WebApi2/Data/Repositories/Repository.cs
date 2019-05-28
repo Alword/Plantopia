@@ -4,9 +4,9 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using Plantopia.WebApi.Data.Interfaces;
+using Plantopia.WebApi2.Data.Interfaces;
 
-namespace InWords.Data
+namespace Plantopia.WebApi2.Data.Repositories
 {
     public class Repository<TEntity> : IGenericRepository<TEntity> where TEntity : class
     {

@@ -2,7 +2,7 @@
 using Swashbuckle.AspNetCore.Swagger;
 using Swashbuckle.AspNetCore.SwaggerGen;
 
-namespace Plantopia.WebApi.Swagger
+namespace Plantopia.WebApi2.Swagger
 {
     /// <summary>
     /// This is need to Remove Version Parameters from url path in Swagger UI.

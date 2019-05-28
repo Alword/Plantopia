@@ -1,16 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Plantopia.Service.Auth.Models;
-using Plantopia.WebApi.Data.Model;
-using Plantopia.WebApi.Data.Repositories;
-using Plantopia.WebApi.Providers;
+using Plantopia.WebApi2.Data.Model;
+using Plantopia.WebApi2.Data.Repositories;
+using Plantopia.WebApi2.Providers;
 
-namespace Plantopia.WebApi.Controllers.v1
+namespace Plantopia.WebApi2.Controllers.v1
 {
     // ReSharper disable once HollowTypeName
     /// <inheritdoc />

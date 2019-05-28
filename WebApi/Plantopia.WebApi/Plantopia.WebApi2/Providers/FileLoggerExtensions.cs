@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.Extensions.Logging;
+﻿using Microsoft.Extensions.Logging;
 
-namespace Plantopia.WebApi.Providers
+namespace Plantopia.WebApi2.Providers
 {
     /// <summary>
     /// 

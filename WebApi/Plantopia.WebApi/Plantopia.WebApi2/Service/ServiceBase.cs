@@ -1,6 +1,6 @@
-﻿using Plantopia.WebApi.Data.Model;
+﻿using Plantopia.WebApi2.Data.Model;
 
-namespace Plantopia.WebApi.Service
+namespace Plantopia.WebApi2.Service
 {
     /// <summary>
     /// 

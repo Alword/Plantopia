@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace Plantopia.WebApi.Data.Interfaces
+namespace Plantopia.WebApi2.Data.Interfaces
 {
     public interface IGenericRepository<TEntity> where TEntity : class
     {
