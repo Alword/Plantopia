@@ -3,11 +3,13 @@ import accessConstants from '../constants/accessConstants';
 import common from './common';
 import access from './access';
 import userInfo from './userInfo';
+import plantsInfo from './plantsInfo';
 
 const appReducer = combineReducers({
     common,
     access,
-    userInfo
+    userInfo,
+    plantsInfo
 });
 
 const rootReducer = (state, action) => {

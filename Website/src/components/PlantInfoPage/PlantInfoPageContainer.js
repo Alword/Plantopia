@@ -1,9 +1,12 @@
 import React from 'react';
-import PlantInfoPage from './PlantInfoPage';
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+import plantsInfoApiActions from '../../actions/plantsInfoApiActions';
 import { AppBarContext } from '../TopAppBar/AppBarContext';
 import UpwardButton from '../shared/UpwardButton';
+import PlantInfoPage from './PlantInfoPage';
 
-function PlantInfoPageContainer() {
+function PlantInfoPageContainer({ plantSensorReadings, getSensorReadings }) {
     const { resetAppBar } = React.useContext(AppBarContext);
 
     React.useEffect(() => {
@@ -11,11 +14,35 @@ function PlantInfoPageContainer() {
             title: 'Информация о растении',
             leftElement: <UpwardButton />
         });
+
+        if (!plantSensorReadings.length) {
+            getSensorReadings();
+        }
     }, []);
 
     return (
-        <PlantInfoPage />
+        <PlantInfoPage plantSensorReadings={plantSensorReadings} />
     );
 }
 
-export default PlantInfoPageContainer;
+PlantInfoPageContainer.propTypes = {
+    plantSensorReadings: PropTypes.array.isRequired,
+    getSensorReadings: PropTypes.func.isRequired,
+};
+
+const mapStateToProps = store => {
+    return {
+        plantSensorReadings: store.plantsInfo.plantSensorReadings
+    };
+};
+
+const mapDispatchToProps = dispatch => {
+    return {
+        getSensorReadings: () => dispatch(plantsInfoApiActions.getSensorReadings()),
+    };
+};
+
+export default connect(
+    mapStateToProps,
+    mapDispatchToProps
+)(PlantInfoPageContainer);

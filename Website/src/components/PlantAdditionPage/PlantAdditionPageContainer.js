@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import PlantAdditionPage from './PlantAdditionPage';
 import { AppBarContext } from '../TopAppBar/AppBarContext';
 import UpwardButton from '../shared/UpwardButton';
+import PlantAdditionPage from './PlantAdditionPage';
 
 function PlantAdditionPageContainer() {
     const { resetAppBar } = React.useContext(AppBarContext);
@@ -14,13 +14,11 @@ function PlantAdditionPageContainer() {
         });
     }, []);
 
-    return (
-        <PlantAdditionPage />
-    );
+    return  <PlantAdditionPage />;
 }
 
 PlantAdditionPageContainer.propTypes = {
-    history: PropTypes.object.isRequired,
+    history: PropTypes.object.isRequired
 };
 
 export default PlantAdditionPageContainer;

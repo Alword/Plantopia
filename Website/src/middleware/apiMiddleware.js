@@ -3,7 +3,7 @@ import commonActions from '../actions/commonActions';
 import accessActions from '../actions/accessActions';
 import history from '../history';
 
-const API_ROOT = 'https://api.plantopia.ru/v1.0/';
+const API_ROOT = 'https://api.plantopia.ru';
 
 export const API_CALL = 'API_CALL';
 
@@ -15,6 +15,7 @@ const apiMiddleware = ({ dispatch, getState }) => next => action => {
     }
 
     const {
+        apiVersion,
         endpoint,
         method,
         data,
@@ -28,7 +29,7 @@ const apiMiddleware = ({ dispatch, getState }) => next => action => {
     dispatch(commonActions.beginLoading());
 
     axios.request({
-        url: API_ROOT + endpoint,
+        url: `${API_ROOT}/${apiVersion}/${endpoint}`,
         method,
         headers: {
             'Content-Type': 'application/json',
