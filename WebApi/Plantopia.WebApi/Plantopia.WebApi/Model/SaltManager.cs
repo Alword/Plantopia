@@ -1,6 +1,6 @@
 ﻿using System.Linq;
 using System.Security.Cryptography;
-using Plantopia.WebApi.Data.Interfaces;
+using Plantopia.WebApi.Interfaces;
 
 namespace Plantopia.WebApi.Model
 {

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using Plantopia.WebApi.Data.Interfaces;
+using Plantopia.WebApi.Interfaces;
 
 namespace Plantopia.WebApi.Domains.Repositories
 {

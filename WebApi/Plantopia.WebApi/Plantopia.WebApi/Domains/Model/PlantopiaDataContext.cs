@@ -38,7 +38,6 @@ namespace Plantopia.WebApi.Domains.Model
         {
             if (_created) return;
             _created = true;
-            Database.EnsureDeleted();
             Database.EnsureCreated();
         }
     }

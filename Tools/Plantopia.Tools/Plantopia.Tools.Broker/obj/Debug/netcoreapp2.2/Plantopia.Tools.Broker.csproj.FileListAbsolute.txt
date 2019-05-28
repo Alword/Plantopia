@@ -1,0 +1,11 @@
+C:\Users\aasle\source\repos\Plantopia\Tools\Plantopia.Tools\Plantopia.Tools.Broker\bin\Debug\netcoreapp2.2\Plantopia.Tools.Broker.deps.json
+C:\Users\aasle\source\repos\Plantopia\Tools\Plantopia.Tools\Plantopia.Tools.Broker\bin\Debug\netcoreapp2.2\Plantopia.Tools.Broker.runtimeconfig.json
+C:\Users\aasle\source\repos\Plantopia\Tools\Plantopia.Tools\Plantopia.Tools.Broker\bin\Debug\netcoreapp2.2\Plantopia.Tools.Broker.runtimeconfig.dev.json
+C:\Users\aasle\source\repos\Plantopia\Tools\Plantopia.Tools\Plantopia.Tools.Broker\bin\Debug\netcoreapp2.2\Plantopia.Tools.Broker.dll
+C:\Users\aasle\source\repos\Plantopia\Tools\Plantopia.Tools\Plantopia.Tools.Broker\obj\Debug\netcoreapp2.2\Plantopia.Tools.Broker.csprojAssemblyReference.cache
+C:\Users\aasle\source\repos\Plantopia\Tools\Plantopia.Tools\Plantopia.Tools.Broker\obj\Debug\netcoreapp2.2\Plantopia.Tools.Broker.csproj.CoreCompileInputs.cache
+C:\Users\aasle\source\repos\Plantopia\Tools\Plantopia.Tools\Plantopia.Tools.Broker\obj\Debug\netcoreapp2.2\Plantopia.Tools.Broker.AssemblyInfoInputs.cache
+C:\Users\aasle\source\repos\Plantopia\Tools\Plantopia.Tools\Plantopia.Tools.Broker\obj\Debug\netcoreapp2.2\Plantopia.Tools.Broker.AssemblyInfo.cs
+C:\Users\aasle\source\repos\Plantopia\Tools\Plantopia.Tools\Plantopia.Tools.Broker\bin\Debug\netcoreapp2.2\Plantopia.Tools.Broker.pdb
+C:\Users\aasle\source\repos\Plantopia\Tools\Plantopia.Tools\Plantopia.Tools.Broker\obj\Debug\netcoreapp2.2\Plantopia.Tools.Broker.dll
+C:\Users\aasle\source\repos\Plantopia\Tools\Plantopia.Tools\Plantopia.Tools.Broker\obj\Debug\netcoreapp2.2\Plantopia.Tools.Broker.pdb

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.452
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plantopia.Tools.Broker", "Plantopia.Tools.Broker\Plantopia.Tools.Broker.csproj", "{32FF5C77-C211-4D45-8E40-028509323DAE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{32FF5C77-C211-4D45-8E40-028509323DAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32FF5C77-C211-4D45-8E40-028509323DAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32FF5C77-C211-4D45-8E40-028509323DAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32FF5C77-C211-4D45-8E40-028509323DAE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D9841701-19DB-4ED9-B403-B69FB4EBDF53}
+	EndGlobalSection
+EndGlobal
