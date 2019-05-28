@@ -1,0 +1,4 @@
+export default {
+    ACCESS_GRANT: 'ACCESS_GRANT',
+    ACCESS_DENIAL: 'ACCESS_DENIAL'
+};
