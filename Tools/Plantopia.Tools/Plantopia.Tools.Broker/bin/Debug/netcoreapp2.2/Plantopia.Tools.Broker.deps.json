@@ -1,14 +1,15 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.2",
-    "signature": "b68ff312d4316c01d5ade84b7d3dbcf5f578abff"
+    "signature": "4a7456a864e2d59721a61c90b85a03f4452d8e4e"
   },
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v2.2": {
       "Plantopia.Tools.Broker/1.0.0": {
         "dependencies": {
-          "MQTTnet": "3.0.2"
+          "MQTTnet": "3.0.2",
+          "Newtonsoft.Json": "12.0.2"
         },
         "runtime": {
           "Plantopia.Tools.Broker.dll": {}
@@ -29,6 +30,14 @@
           "lib/netstandard2.0/MQTTnet.dll": {
             "assemblyVersion": "3.0.2.0",
             "fileVersion": "3.0.2.0"
+          }
+        }
+      },
+      "Newtonsoft.Json/12.0.2": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.0.2.23222"
           }
         }
       },
@@ -690,6 +699,13 @@
       "sha512": "sha512-DilAuqlooGvPMFP4pkbXYkU0MkWp1ty4vMecKQG5ZDSX7MUw4s71TrCrzNyCm07aUwGxL+x4udQuUhQPCQKWDg==",
       "path": "mqttnet/3.0.2",
       "hashPath": "mqttnet.3.0.2.nupkg.sha512"
+    },
+    "Newtonsoft.Json/12.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rTK0s2EKlfHsQsH6Yx2smvcTCeyoDNgCW7FEYyV01drPlh2T243PR2DiDXqtC5N4GDm4Ma/lkxfW5a/4793vbA==",
+      "path": "newtonsoft.json/12.0.2",
+      "hashPath": "newtonsoft.json.12.0.2.nupkg.sha512"
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
       "type": "package",

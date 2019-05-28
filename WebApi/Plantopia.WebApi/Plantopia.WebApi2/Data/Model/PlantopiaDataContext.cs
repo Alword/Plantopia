@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Plantopia.WebApi2.Data.Model.Device;
 using Plantopia.WebApi2.Data.Model.Person;
 
 namespace Plantopia.WebApi2.Data.Model
@@ -32,7 +33,7 @@ namespace Plantopia.WebApi2.Data.Model
         /// <summary>
         /// Accounts set
         /// </summary>
-        public DbSet<Account> Accounts { get; set; }
+        public DbSet<DeviceData> DeviceDatas { get; set; }
 
         /// <summary>
         /// Accounts set

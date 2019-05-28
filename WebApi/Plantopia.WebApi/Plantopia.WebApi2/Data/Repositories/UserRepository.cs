@@ -1,4 +1,5 @@
-﻿using Plantopia.WebApi2.Data.Model;
+﻿using System.Linq;
+using Plantopia.WebApi2.Data.Model;
 using Plantopia.WebApi2.Data.Model.Person;
 
 namespace Plantopia.WebApi2.Data.Repositories

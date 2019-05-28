@@ -8,8 +8,10 @@ namespace Plantopia.Tools.Broker
         static void Main(string[] args)
         {
             TestConnection x = new TestConnection();
+
+            x.SendMockToServer();
             //Task.Run(x.Scanner);
-            Task.Run(x.Subscribe_And_Publish);
+            //Task.Run(x.SubscribeAndPublish);
             Console.ReadLine();
         }
     }
