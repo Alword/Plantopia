@@ -3,10 +3,10 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Plantopia.Auth.Extensions;
-using Plantopia.WebApi.Data.Model;
-using Plantopia.WebApi.Data.Model.Person;
-using Plantopia.WebApi.Data.Repositories;
-using Plantopia.WebApi.Enums;
+using Plantopia.WebApi.Domains.Enums;
+using Plantopia.WebApi.Domains.Model;
+using Plantopia.WebApi.Domains.Model.Person;
+using Plantopia.WebApi.Domains.Repositories;
 using Plantopia.WebApi.Service;
 
 namespace Plantopia.WebApi.Controllers.v1
