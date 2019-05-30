@@ -30,7 +30,7 @@ function PlantInfoPage({ plantSensorReadings, classes }) {
                         <YAxis />
                         <CartesianGrid vertical={false} strokeDasharray="3 3" />
                         <Tooltip />
-                        <Area name="Температура" type="monotone" dataKey="temerature" />
+                        <Area name="Температура" type="monotone" dataKey="temperature" />
                     </AreaChart>
                 </ResponsiveContainer>
             </Typography>
